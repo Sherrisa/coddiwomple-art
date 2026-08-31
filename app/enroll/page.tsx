@@ -1,3 +1,5 @@
+import EnrollmentForm from "@/components/enrollment-form";
+
 export default function EnrollPage() {
   return (
     <main className="min-h-screen px-6 py-16 md:px-12 lg:px-24">
@@ -16,9 +18,7 @@ export default function EnrollPage() {
             courses will be available here.
           </p>
 
-          <button className="mt-8 rounded-md bg-black px-6 py-3 text-sm font-medium text-white hover:bg-gray-800">
-            Enrollment Coming Soon
-          </button>
+          <EnrollmentForm />
         </div>
       </div>
     </main>

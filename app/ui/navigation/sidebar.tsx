@@ -8,20 +8,20 @@ import NavLinks from "./nav-links";
 export default function SideBar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Close the mobile menu when the viewport reaches the desktop breakpoint
+  // Bug fix: Close the mobile menu when the viewport reaches the desktop breakpoint
   useEffect(() => {
-  const handleResize = () => {
-    if (window.innerWidth >= 768) {
-      setMenuOpen(false);
-    }
-  };
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false);
+      }
+    };
 
-  window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
 
-  return () => {
-    window.removeEventListener("resize", handleResize);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -59,10 +59,7 @@ export default function SideBar() {
       {/* Mobile sidebar — open */}
       {menuOpen && (
         <aside className=" h-screen w-30 shrink-0 border-r bg-white px-6 py-8">
-          <button
-            className="mb-12"
-            onClick={() => setMenuOpen(false)}
-          >
+          <button className="mb-12" onClick={() => setMenuOpen(false)}>
             <Image
               src="/scooter.svg"
               alt="Close navigation"
