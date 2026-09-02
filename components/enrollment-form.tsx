@@ -1,19 +1,37 @@
 "use client";
 
+import type { SubmitEvent } from "react";
+
 export default function EnrollmentForm() {
+  async function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    const response = await fetch("/api/enroll", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      form.reset();
+      console.log("Enrollment submitted successfully!", result);
+    } else {
+      console.error("Enrollment submission failed.", result);
+    }
+  }
+
   return (
-    <form className="mt-12 max-w-xl space-y-8">
+    <form className="mt-12 max-w-xl space-y-8" onSubmit={handleSubmit}>
       {/* Student information */}
       <fieldset className="space-y-4">
-        <legend className="text-lg font-medium">
-          Student Information
-        </legend>
+        <legend className="text-lg font-medium">Student Information</legend>
 
         <div>
-          <label
-            htmlFor="studentName"
-            className="block text-sm font-medium"
-          >
+          <label htmlFor="studentName" className="block text-sm font-medium">
             Student name
           </label>
 
@@ -34,10 +52,7 @@ export default function EnrollmentForm() {
         </legend>
 
         <div>
-          <label
-            htmlFor="parentName"
-            className="block text-sm font-medium"
-          >
+          <label htmlFor="parentName" className="block text-sm font-medium">
             Parent / guardian name
           </label>
 
@@ -51,10 +66,7 @@ export default function EnrollmentForm() {
         </div>
 
         <div>
-          <label
-            htmlFor="parentEmail"
-            className="block text-sm font-medium"
-          >
+          <label htmlFor="parentEmail" className="block text-sm font-medium">
             Email
           </label>
 
@@ -68,10 +80,7 @@ export default function EnrollmentForm() {
         </div>
 
         <div>
-          <label
-            htmlFor="parentPhone"
-            className="block text-sm font-medium"
-          >
+          <label htmlFor="parentPhone" className="block text-sm font-medium">
             Phone
           </label>
 
@@ -92,12 +101,7 @@ export default function EnrollmentForm() {
         </legend>
 
         <label className="flex items-center gap-3">
-          <input
-            type="radio"
-            name="course"
-            value="Digital Drawing"
-            required
-          />
+          <input type="radio" name="course" value="Digital Drawing" required />
 
           <span>Digital Drawing</span>
         </label>
@@ -105,11 +109,9 @@ export default function EnrollmentForm() {
 
       {/* Optional message */}
       <div>
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium"
-        >
-          Anything else you&apos;d like us to know? <span className="font-normal">(optional)</span>
+        <label htmlFor="message" className="block text-sm font-medium">
+          Anything else you&apos;d like us to know?{" "}
+          <span className="font-normal">(optional)</span>
         </label>
 
         <textarea
