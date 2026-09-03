@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative flex min-h-screen items-center justify-center">
         <Image
-          src="/scooter.svg"
+          src="/scooter_berry.svg"
           alt="Scooter illustration"
           width={149}
           height={150}

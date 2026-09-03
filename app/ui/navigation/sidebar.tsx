@@ -29,7 +29,7 @@ export default function SideBar() {
       <aside className="hidden h-screen w-48 flex-col border-r px-6 py-8 md:flex">
         <Link href="/" className="mb-12">
           <Image
-            src="/scooter.svg"
+            src="/scooter_berry.svg"
             alt="Coddiwomple Art"
             width={100}
             height={100}
@@ -48,7 +48,7 @@ export default function SideBar() {
           onClick={() => setMenuOpen(true)}
         >
           <Image
-            src="/scooter.svg"
+            src="/scooter_berry.svg"
             alt="Open navigation"
             width={50}
             height={50}
@@ -61,7 +61,7 @@ export default function SideBar() {
         <aside className=" h-screen w-30 shrink-0 border-r bg-white px-6 py-8">
           <button className="mb-12" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/scooter.svg"
+              src="/scooter_berry.svg"
               alt="Close navigation"
               width={50}
               height={50}
