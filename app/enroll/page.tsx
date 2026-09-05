@@ -9,13 +9,12 @@ export default function EnrollPage() {
         </p>
 
         <h1 className="text-5xl font-semibold tracking-tight md:text-6xl">
-          Enroll
+          Reserve Your Spot
         </h1>
 
         <div className="mt-12">
           <p className="text-xl leading-8 text-gray-600">
-            Ready to get creative? Enrollment information for upcoming
-            courses will be available here.
+            Your next creative adventure starts here.
           </p>
 
           <EnrollmentForm />

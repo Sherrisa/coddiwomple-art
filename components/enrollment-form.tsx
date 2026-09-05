@@ -1,10 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import type { SubmitEvent } from "react";
 
 export default function EnrollmentForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   async function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    setIsSubmitting(true);
 
     const form = event.currentTarget;
     const formData = new FormData(form);
@@ -18,10 +24,28 @@ export default function EnrollmentForm() {
 
     if (response.ok) {
       form.reset();
+      setSubmitted(true);
+      setIsSubmitting(false);
       console.log("Enrollment submitted successfully!", result);
     } else {
+      setIsSubmitting(false);
       console.error("Enrollment submission failed.", result);
     }
+  }
+  if (submitted) {
+    return (
+      <div className="mt-12 max-w-xl">
+        <h2 className="text-2xl font-medium">🎉 Yay! You did it.</h2>
+
+        <p className="mt-4">Your enrollment information has been received.</p>
+
+        <p className="mt-4">
+          I&apos;ll send you a confirmation and an invoice soon.
+        </p>
+
+        <p className="mt-8 font-medium">Grab your pencil. Let&apos;s go.</p>
+      </div>
+    );
   }
 
   return (
@@ -124,9 +148,10 @@ export default function EnrollmentForm() {
 
       <button
         type="submit"
+        disabled={isSubmitting}
         className="rounded-md bg-black px-6 py-3 text-sm font-medium text-white hover:bg-gray-800"
       >
-        Submit Enrollment
+        {isSubmitting ? "Adventure loading..." : "Submit Enrollment"}
       </button>
     </form>
   );
