@@ -15,13 +15,13 @@ export default function Home() {
           priority
         />
 
-        <div className="absolute left-[12%] top-1/2 -translate-y-1/2 text-left md:left-[18%]">
+        <div className="absolute left-[12%] top-1/2 -translate-y-1/2 text-left">
           <h1 className="text-2xl font-bold md:text-4xl">
             Coddiwomple Art
           </h1>
 
           <p className="mt-2 text-base md:text-xl">
-            Your next creative adventure starts here.
+            Your creative adventure starts here.
           </p>
 
           <p className="mt-4 text-sm md:text-base">
