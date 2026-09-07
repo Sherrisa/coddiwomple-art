@@ -1,6 +1,6 @@
 export default function CoursesPage() {
   return (
-    <main className="min-h-screen px-6 pt-[35vh] pb-16 md:px-12 lg:px-24">
+    <main className="min-h-screen px-6 pt-[45vh] pb-16 md:px-12 lg:px-24">
       <div className="mx-auto max-w-4xl">
 
         {/* Page Header */}

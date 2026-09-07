@@ -8,7 +8,7 @@ import NavLinks from "./nav-links";
 
 export default function SideBar() {
   // Mobile navigation state
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
 
   // Desktop navigation state
   const [desktopMenuOpen, setDesktopMenuOpen] = useState(true);
