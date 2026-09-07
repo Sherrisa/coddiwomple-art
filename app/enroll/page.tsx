@@ -2,7 +2,7 @@ import EnrollmentForm from "@/components/enrollment-form";
 
 export default function EnrollPage() {
   return (
-    <main className="min-h-screen px-6 py-16 md:px-12 lg:px-24">
+    <main className="min-h-screen px-6 pt-[35vh] pb-16 md:px-12 lg:px-24">
       <div className="mx-auto max-w-3xl">
         <p className="mb-3 text-sm font-medium uppercase tracking-widest text-gray-500">
           Coddiwomple Art

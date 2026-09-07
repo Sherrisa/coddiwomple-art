@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { jost } from '@/app/ui/fonts';
-import '@/app/ui/globals.css';
+
+import { jost } from "@/app/ui/fonts";
+
+import "@/app/ui/globals.css";
+
 import SideBar from "@/app/ui/navigation/sidebar";
 
 export const metadata: Metadata = {
@@ -12,9 +15,9 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) { 
+}) {
   return (
-   <html lang="en">
+    <html lang="en">
       <body className={`${jost.className} antialiased`}>
         <div className="flex min-h-screen">
           <SideBar />

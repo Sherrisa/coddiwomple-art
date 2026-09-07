@@ -1,14 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
+
 import Image from "next/image";
-import Link from "next/link";
+
 import NavLinks from "./nav-links";
 
 export default function SideBar() {
+  // Mobile navigation state
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Bug fix: Close the mobile menu when the viewport reaches the desktop breakpoint
+  // Desktop navigation state
+  const [desktopMenuOpen, setDesktopMenuOpen] = useState(true);
+
+  // Close the mobile menu when the viewport reaches the desktop breakpoint
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -26,19 +31,28 @@ export default function SideBar() {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="hidden h-screen w-48 flex-col border-r px-6 py-8 md:flex">
-        <Link href="/" className="mb-12">
+      <aside
+        className={`sticky top-0 hidden h-screen shrink-0 flex-col border-r py-8 transition-all duration-300 md:flex ${
+          desktopMenuOpen ? "w-48 px-6" : "w-20 px-3"
+        }`}
+      >
+        <button
+          className="mb-12"
+          onClick={() => setDesktopMenuOpen(!desktopMenuOpen)}
+        >
           <Image
             src="/scooter_berry.svg"
-            alt="Coddiwomple Art"
-            width={100}
-            height={100}
+            alt={desktopMenuOpen ? "Close navigation" : "Open navigation"}
+            width={50}
+            height={50}
           />
-        </Link>
+        </button>
 
-        <nav className="flex flex-col gap-2">
-          <NavLinks />
-        </nav>
+        {desktopMenuOpen && (
+          <nav className="flex flex-col gap-2">
+            <NavLinks />
+          </nav>
+        )}
       </aside>
 
       {/* Mobile scooter — opens the menu */}
@@ -58,7 +72,7 @@ export default function SideBar() {
 
       {/* Mobile sidebar — open */}
       {menuOpen && (
-        <aside className=" h-screen w-30 shrink-0 border-r bg-white px-6 py-8">
+        <aside className="fixed left-0 top-0 z-40 w-30 bg-white px-6 py-8">
           <button className="mb-12" onClick={() => setMenuOpen(false)}>
             <Image
               src="/scooter_berry.svg"

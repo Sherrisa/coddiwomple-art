@@ -11,11 +11,11 @@ export default function Home() {
           alt="Scooter illustration"
           width={149}
           height={150}
-          className="h-auto w-64 md:w-96 lg:w-125"
+          className="h-auto w-64 md:w-96 lg:w-125 translate-x-4"
           priority
         />
 
-        <div className="absolute left-[12%] top-1/2 -translate-y-1/2 text-left">
+        <div className="absolute left-[8%] sm:left-[12%] top-1/2 -translate-y-1/2 text-left">
           <h1 className="text-2xl font-bold md:text-4xl">
             Coddiwomple Art
           </h1>
@@ -23,10 +23,7 @@ export default function Home() {
           <p className="mt-2 text-base md:text-xl">
             Your creative adventure starts here.
           </p>
-
-          <p className="mt-4 text-sm md:text-base">
-            Grab your digital pencil and let&apos;s go.
-          </p>
+          
         </div>
       </section>
 
