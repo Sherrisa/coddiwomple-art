@@ -2,7 +2,6 @@ export default function CoursesPage() {
   return (
     <main className="min-h-screen px-6 pt-[45vh] pb-16 md:px-12 lg:px-24">
       <div className="mx-auto max-w-4xl">
-
         {/* Page Header */}
         <section>
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-gray-500">
@@ -26,14 +25,14 @@ export default function CoursesPage() {
 
           <p className="mt-6 text-lg leading-8">
             Students build real-world art and design skills while exploring
-            digital tools as another creative medium. We draw, paint,
-            experiment with color, think about composition, and learn to see
-            the world like artists and designers.
+            digital tools as another creative medium. We draw, paint, experiment
+            with color, think about composition, and learn to see the world like
+            artists and designers.
           </p>
 
           <p className="mt-6 text-lg leading-8">
-            Then we bring technology into the process and see where it can
-            take us.
+            Then we bring technology into the process and see where it can take
+            us.
           </p>
         </section>
 
@@ -44,21 +43,25 @@ export default function CoursesPage() {
           </p>
 
           <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
-            Digital Art &amp; Design
+            Digital Drawing
           </h2>
+
+          <p className="mt-3 text-lg font-medium">
+            Begins Wednesday, October 7
+          </p>
 
           <h3 className="mt-8 text-2xl font-semibold">
             Learn the skill. Make something. See what happens next.
           </h3>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            This course introduces students to the fundamentals of drawing,
-            painting, color, and composition while giving them new ways to
-            experiment with technology.
+            This course introduces students to digital drawing while giving them
+            opportunities to explore color, composition, and creative ideas
+            through hands-on projects.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Each class focuses on an art or design skill that can be practiced
+            Each class introduces a drawing or visual art skill that can be practiced
             with traditional materials and then explored digitally.
           </p>
 
@@ -94,23 +97,18 @@ export default function CoursesPage() {
           </h2>
 
           <div className="mt-10 space-y-12">
-
             <div>
-              <h3 className="text-2xl font-semibold">
-                Drawing
-              </h3>
+              <h3 className="text-2xl font-semibold">Drawing</h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
                 Learn to look closely and understand what you&apos;re seeing.
-                Explore concepts such as value, light, shading, negative
-                space, proportion, and form.
+                Explore concepts such as value, light, shading, negative space,
+                proportion, and form.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">
-                Color
-              </h3>
+              <h3 className="text-2xl font-semibold">Color</h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
                 Explore how colors work together. Create color palettes and
@@ -119,9 +117,7 @@ export default function CoursesPage() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">
-                Composition
-              </h3>
+              <h3 className="text-2xl font-semibold">Composition</h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
                 Discover how elements interact on a page. Explore placement,
@@ -130,17 +126,14 @@ export default function CoursesPage() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">
-                Creative Technology
-              </h3>
+              <h3 className="text-2xl font-semibold">Creative Technology</h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-                Use digital tools to experiment in ways that aren&apos;t
-                always possible with traditional materials. Change it. Move
-                it. Layer it. Try something new.
+                Use digital tools to experiment in ways that aren&apos;t always
+                possible with traditional materials. Change it. Move it. Layer
+                it. Try something new.
               </p>
             </div>
-
           </div>
         </section>
 
@@ -151,13 +144,13 @@ export default function CoursesPage() {
           </h2>
 
           <p className="mt-8 max-w-3xl text-lg leading-8 text-gray-600">
-            Some of our favorite experiments begin with something you can
-            hold in your hands.
+            Some of our favorite experiments begin with something you can hold
+            in your hands.
           </p>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            Students may draw or paint traditionally, then bring their
-            artwork into the digital environment.
+            Students may draw or paint traditionally, then bring their artwork
+            into the digital environment.
           </p>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
@@ -194,9 +187,7 @@ export default function CoursesPage() {
             and technology.
           </p>
 
-          <p className="mt-6 text-xl font-semibold">
-            We use both.
-          </p>
+          <p className="mt-6 text-xl font-semibold">We use both.</p>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
             Students learn foundational art skills they can practice
@@ -208,8 +199,8 @@ export default function CoursesPage() {
           </p>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            They learn to make decisions, solve visual problems, experiment
-            with possibilities, and develop their own ideas.
+            They learn to make decisions, solve visual problems, experiment with
+            possibilities, and develop their own ideas.
           </p>
 
           <p className="mt-8 max-w-3xl text-xl font-semibold leading-8">
@@ -236,7 +227,6 @@ export default function CoursesPage() {
             Enroll Now →
           </a>
         </section>
-
       </div>
     </main>
   );

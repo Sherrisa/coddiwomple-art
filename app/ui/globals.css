@@ -26,3 +26,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .wandering-dot {
+    visibility: hidden;
+  }
+}
