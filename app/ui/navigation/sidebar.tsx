@@ -72,7 +72,7 @@ export default function SideBar() {
 
       {/* Mobile sidebar — open */}
       {menuOpen && (
-        <aside className="fixed left-0 top-0 z-40 w-30 bg-white px-6 py-8">
+        <aside className="absolute left-0 top-0 z-40 w-30 bg-white px-6 py-8">
           <button className="mb-12" onClick={() => setMenuOpen(false)}>
             <Image
               src="/scooter_berry.svg"
