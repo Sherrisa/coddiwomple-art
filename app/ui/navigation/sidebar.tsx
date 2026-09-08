@@ -16,13 +16,13 @@ export default function SideBar() {
   // Close the mobile menu when the viewport reaches the desktop breakpoint
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 640) {
         setMenuOpen(false);
       }
     };
 
     window.addEventListener("resize", handleResize);
-
+    handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -32,7 +32,7 @@ export default function SideBar() {
     <>
       {/* Desktop sidebar */}
       <aside
-        className={`sticky top-0 hidden h-screen shrink-0 flex-col border-r py-8 transition-all duration-300 md:flex ${
+        className={`sticky top-0 hidden h-screen shrink-0 flex-col border-r py-8 transition-all duration-300 sm:flex ${
           desktopMenuOpen ? "w-48 px-6" : "w-20 px-3"
         }`}
       >
@@ -58,7 +58,7 @@ export default function SideBar() {
       {/* Mobile scooter — opens the menu */}
       {!menuOpen && (
         <button
-          className="fixed left-4 top-4 z-50 md:hidden"
+          className="fixed left-4 top-4 z-50 sm:hidden"
           onClick={() => setMenuOpen(true)}
         >
           <Image
