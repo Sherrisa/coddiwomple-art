@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AnimatedLink from "@/components/animated-link";
 
 export default function Home() {
   return (
@@ -145,39 +146,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative mt-14 inline-block">
-          <a
-            href="/courses"
-            className="text-lg font-semibold text-[#A2337E] transition-all hover:tracking-wide"
-          >
-            Explore the courses →
-          </a>
-
-          <svg
-            className="absolute -bottom-6 left-1/2 h-5 w-48 -translate-x-1/2 overflow-visible"
-            viewBox="0 0 192 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              id="wandering-path"
-              d="M4 10 C28 2, 44 2, 64 10 S100 18, 124 10 S160 2, 188 10"
-              fill="none"
-            />
-
-            <circle r="5" fill="#A2337E" className="wandering-dot">
-              <animateMotion
-                dur="14s"
-                repeatCount="indefinite"
-                keyPoints="0;1;0"
-                keyTimes="0;0.5;1"
-                calcMode="linear"
-                path="M4 10 C28 2, 44 2, 64 10 S100 18, 124 10 S160 2, 188 10"
-              />
-            </circle>
-          </svg>
-        </div>
+        <AnimatedLink href="/courses" dotRadius={5} duration="14s">
+          Explore the courses →
+        </AnimatedLink>
       </section>
 
       {/* Physical + Digital */}
@@ -219,38 +190,9 @@ export default function Home() {
           We&apos;ll bring the pencils, paint, pixels, and possibilities.
         </p>
 
-        <div className="relative mt-14 inline-block">
-  <a
-    href="/enroll"
-    className="text-lg font-semibold text-[#A2337E] transition-all hover:tracking-wide"
-  >
-    Enroll Now →
-  </a>
-
-  <svg
-    className="absolute -bottom-6 left-1/2 h-5 w-48 -translate-x-1/2 overflow-visible"
-    viewBox="0 0 192 20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-  >
-    <path
-      d="M4 10 C28 2, 44 2, 64 10 S100 18, 124 10 S160 2, 188 10"
-      fill="none"
-    />
-
-    <circle r="5" fill="#A2337E" className="wandering-dot">
-      <animateMotion
-        dur="14s"
-        repeatCount="indefinite"
-        keyPoints="0;1;0"
-        keyTimes="0;0.5;1"
-        calcMode="linear"
-        path="M4 10 C28 2, 44 2, 64 10 S100 18, 124 10 S160 2, 188 10"
-      />
-    </circle>
-  </svg>
-</div>
+        <AnimatedLink href="/enroll" dotRadius={8} duration="9s">
+          Enroll Now →
+        </AnimatedLink>
       </section>
     </main>
   );

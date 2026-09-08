@@ -1,3 +1,5 @@
+import AnimatedLink from "@/components/animated-link";
+
 export default function CoursesPage() {
   return (
     <main className="min-h-screen px-6 pt-[45vh] pb-16 md:px-12 lg:px-24">
@@ -61,8 +63,8 @@ export default function CoursesPage() {
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Each class introduces a drawing or visual art skill that can be practiced
-            with traditional materials and then explored digitally.
+            Each class introduces a drawing or visual art skill that can be
+            practiced with traditional materials and then explored digitally.
           </p>
 
           <h3 className="mt-10 text-xl font-semibold">
@@ -220,12 +222,9 @@ export default function CoursesPage() {
             Your next creative adventure starts here.
           </p>
 
-          <a
-            href="/enroll"
-            className="mt-8 inline-block font-semibold underline underline-offset-4"
-          >
+          <AnimatedLink href="/enroll" dotRadius={8} duration="9s">
             Enroll Now →
-          </a>
+          </AnimatedLink>
         </section>
       </div>
     </main>
