@@ -120,14 +120,24 @@ export default function EnrollmentForm() {
 
       {/* Course selection */}
       <fieldset className="space-y-4">
-        <legend className="text-lg font-medium">
-          Which course are you interested in?
-        </legend>
+        <legend className="text-lg font-medium">Select your course</legend>
 
-        <label className="flex items-center gap-3">
-          <input type="radio" name="course" value="Digital Drawing" required />
+        <label className="flex items-start gap-3">
+          <input
+            type="radio"
+            name="course"
+            value="Digital Drawing — 4:30–5:15 PM"
+            required
+            className="mt-1"
+          />
 
-          <span>Digital Drawing</span>
+          <span>
+            <span className="block font-medium">Digital Drawing</span>
+            <span className="block text-gray-600">
+              Wednesdays, 4:30–5:15 PM · October 7–November 4
+            </span>
+            <span className="block text-gray-600">Grades 1–6 · $75 + sales tax</span>
+          </span>
         </label>
       </fieldset>
 

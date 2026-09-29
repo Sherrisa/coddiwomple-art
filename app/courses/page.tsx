@@ -48,10 +48,18 @@ export default function CoursesPage() {
             Digital Drawing
           </h2>
 
-          <p className="mt-3 text-lg font-medium">
-            Begins Wednesday, October 7
+          <p className="mt-2 text-base text-gray-600">Grades 1–6 · $75</p>
+
+          <p className="mt-5 text-lg font-medium">
+            Wednesdays · October 7–November 4
           </p>
 
+          <p className="mt-2 text-base text-gray-600">
+            3:30–4:15 PM · Full
+            <br />
+            4:30–5:15 PM ·{" "}
+            <span className="font-medium text-gray-900">Now enrolling</span>
+          </p>
           <h3 className="mt-8 text-2xl font-semibold">
             Learn the skill. Make something. See what happens next.
           </h3>
@@ -212,18 +220,87 @@ export default function CoursesPage() {
           </p>
         </section>
 
-        {/* Enrollment CTA */}
-        <section className="mt-24 border-t border-gray-200 pt-20 pb-24">
-          <h2 className="text-3xl font-semibold md:text-4xl">
-            Ready to Start Your Creative Adventure?
+        {/* Digital Drawing Enrollment CTA */}
+        <section className="mt-16 border-t border-gray-200 pt-12 pb-4">
+          <h2 className="text-2xl font-semibold md:text-3xl">
+            Ready to Make Something?
           </h2>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-            Your next creative adventure starts here.
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600">
+            Bring your ideas to life, one creative decision at a time.
           </p>
 
-          <AnimatedLink href="/enroll" dotRadius={8} duration="9s">
-            Enroll Now →
+          <AnimatedLink href="/enroll" dotRadius={5} duration="14s">
+            Enroll in Digital Drawing →
+          </AnimatedLink>
+        </section>
+
+        {/* Animation */}
+        <section className="mt-20 rounded-2xl bg-gray-100 p-8 md:p-12">
+          <p className="text-sm font-medium uppercase tracking-widest text-gray-500">
+            Featured Course
+          </p>
+
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Animation</h2>
+
+          <p className="mt-3 text-lg font-medium">
+            Coming Soon — Begins Wednesday, November 11
+          </p>
+
+          <h3 className="mt-8 text-2xl font-semibold">
+            Make it move. Tell a story. See what happens next.
+          </h3>
+
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Bring your drawings to life through animation. Students explore
+            movement, timing, sequencing, and visual storytelling while learning
+            how digital tools can transform a still image into something that
+            moves.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Through hands-on projects, students experiment with frames, layers,
+            movement, and transformation while developing their own creative
+            ideas.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Students may explore:
+          </p>
+
+          <ul className="mt-4 space-y-3 text-lg leading-8 text-gray-600">
+            <li>Drawing for animation</li>
+            <li>Layers and independent elements</li>
+            <li>Frames and sequencing</li>
+            <li>Movement and timing</li>
+            <li>Transformation and repetition</li>
+            <li>Visual storytelling</li>
+            <li>Digital illustration and animation tools</li>
+          </ul>
+
+          <p className="mt-10 text-lg font-medium leading-8">
+            No previous Coddiwomple Art course is required.
+          </p>
+
+          <p className="mt-4 text-lg font-semibold leading-8">
+            But if you&apos;ve taken Digital Drawing, you&apos;ll already have a
+            creative foundation to build on.
+          </p>
+        </section>
+
+        {/* Animation Enrollment CTA */}
+        <section className="mt-16 border-t border-gray-200 pt-12 pb-4">
+          <h2 className="text-2xl font-semibold md:text-3xl">
+            Ready to Make It Move?
+          </h2>
+
+          <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600">
+            Turn your drawings into movement, stories, and unexpected
+            possibilities.
+          </p>
+
+          <AnimatedLink href="/enroll" dotRadius={5} duration="14s">
+            Enroll in Animation →
           </AnimatedLink>
         </section>
       </div>
