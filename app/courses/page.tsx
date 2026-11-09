@@ -1,3 +1,4 @@
+
 import AnimatedLink from "@/components/animated-link";
 
 export default function CoursesPage() {
@@ -27,76 +28,133 @@ export default function CoursesPage() {
 
           <p className="mt-6 text-lg leading-8">
             Students build real-world art and design skills while exploring
-            digital tools as another creative medium. We draw, paint, experiment
-            with color, think about composition, and learn to see the world like
-            artists and designers.
+            digital tools as another creative medium. We draw, paint,
+            experiment with color, think about composition, and learn to see
+            the world like artists and designers.
           </p>
 
           <p className="mt-6 text-lg leading-8">
-            Then we bring technology into the process and see where it can take
-            us.
+            Then we bring technology into the process and see where it can
+            take us.
           </p>
         </section>
 
-        {/* Digital Art & Design */}
+        {/* Featured Course: Digital Animation */}
         <section className="mt-20 rounded-2xl bg-gray-100 p-8 md:p-12">
           <p className="text-sm font-medium uppercase tracking-widest text-gray-500">
-            Featured Course
+            Featured Course · Now Enrolling
           </p>
 
           <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
-            Digital Drawing
+            Digital Animation
           </h2>
 
-          <p className="mt-2 text-base text-gray-600">Grades 1–6 · $75</p>
+          <p className="mt-3 text-xl font-medium">
+            Bring Your Art to Life!
+          </p>
+
+          <p className="mt-4 text-base text-gray-600">
+            Grades 1–6 · $75
+          </p>
 
           <p className="mt-5 text-lg font-medium">
-            Wednesdays · October 7–November 4
+            Tuesdays · November 17–December 15, 2026
           </p>
 
           <p className="mt-2 text-base text-gray-600">
-            3:30–4:15 PM · Full
+            3:15–4:00 PM · Five weeks
             <br />
-            4:30–5:15 PM ·{" "}
-            <span className="font-medium text-gray-900">Now enrolling</span>
+            The Coffee Shop · Brooklake Christian Schools
           </p>
+
           <h3 className="mt-8 text-2xl font-semibold">
-            Learn the skill. Make something. See what happens next.
+            Make it move. Tell a story. See what happens next.
           </h3>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            This course introduces students to digital drawing while giving them
-            opportunities to explore color, composition, and creative ideas
-            through hands-on projects.
+            In this fun, hands-on five-week course, students explore digital
+            animation using Adobe Fresco on the iPad.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Each class introduces a drawing or visual art skill that can be
-            practiced with traditional materials and then explored digitally.
+            Students learn how to make their drawings move, experiment with
+            frame by frame animation, and discover how timing and movement
+            can bring their creative ideas to life.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Projects include original animated artwork and a festive holiday
+            greeting to share with family and friends!
           </p>
 
           <h3 className="mt-10 text-xl font-semibold">
-            Students might work with:
+            Students will explore:
           </h3>
 
           <ul className="mt-4 space-y-3 text-lg leading-8 text-gray-600">
-            <li>Pencil and paper</li>
-            <li>Paint and brushes</li>
-            <li>Markers and other traditional media</li>
-            <li>Digital drawing and painting tools</li>
-            <li>Color palettes</li>
-            <li>Scanned artwork</li>
-            <li>Layers and blending</li>
-            <li>Digital composition</li>
+            <li>Drawing for animation</li>
+            <li>Frames and sequencing</li>
+            <li>Movement and timing</li>
+            <li>Layers and independent elements</li>
+            <li>Frame by frame animation</li>
+            <li>Visual storytelling</li>
+            <li>Digital animation tools in Adobe Fresco</li>
           </ul>
 
           <p className="mt-10 text-lg font-medium leading-8">
-            The goal isn&apos;t simply to learn how to use digital tools.
+            Prerequisite: Digital Drawing
           </p>
 
-          <p className="mt-4 text-lg font-semibold leading-8">
-            It&apos;s to learn how artists use tools to turn ideas into
-            something they can see.
+          <p className="mt-4 text-lg leading-8 text-gray-600">
+            This course builds on the skills students developed in Digital
+            Drawing. No previous animation experience is required.
+          </p>
+
+          <div className="mt-10">
+            <AnimatedLink
+              href="/enroll"
+              dotRadius={5}
+              duration="14s"
+            >
+              Enroll in Digital Animation →
+            </AnimatedLink>
+          </div>
+        </section>
+
+{/* What Makes Coddiwomple Different */}
+        <section className="mt-20">
+          <h2 className="text-3xl font-semibold md:text-4xl">
+            What Makes Coddiwomple Different?
+          </h2>
+
+          <p className="mt-8 max-w-3xl text-lg leading-8 text-gray-600">
+            Coddiwomple Art isn&apos;t about choosing between traditional
+            art and technology.
+          </p>
+
+          <p className="mt-6 text-xl font-semibold">
+            We use both.
+          </p>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+            Students learn foundational art skills they can practice
+            anywhere—with a pencil, a paintbrush, or a piece of paper.
+          </p>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+            Then they discover how technology can expand the
+            creative process.
+          </p>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+            They learn to make decisions, solve visual problems,
+            experiment with possibilities, and develop their own ideas.
+          </p>
+
+          <p className="mt-8 max-w-3xl text-xl font-semibold leading-8">
+            Art is the foundation.
+            <br />
+            Technology is another way to explore.
           </p>
         </section>
 
@@ -108,40 +166,50 @@ export default function CoursesPage() {
 
           <div className="mt-10 space-y-12">
             <div>
-              <h3 className="text-2xl font-semibold">Drawing</h3>
+              <h3 className="text-2xl font-semibold">
+                Drawing
+              </h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
                 Learn to look closely and understand what you&apos;re seeing.
-                Explore concepts such as value, light, shading, negative space,
-                proportion, and form.
+                Explore concepts such as value, light, shading, negative
+                space, proportion, and form.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">Color</h3>
+              <h3 className="text-2xl font-semibold">
+                Color
+              </h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-                Explore how colors work together. Create color palettes and
-                experiment with how changing color can change an artwork.
+                Explore how colors work together. Create color palettes
+                and experiment with how changing color can change an
+                artwork.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">Composition</h3>
+              <h3 className="text-2xl font-semibold">
+                Composition
+              </h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-                Discover how elements interact on a page. Explore placement,
-                scale, space, shape, and color to create visual relationships.
+                Discover how elements interact on a page. Explore
+                placement, scale, space, shape, and color to create
+                visual relationships.
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold">Creative Technology</h3>
+              <h3 className="text-2xl font-semibold">
+                Creative Technology
+              </h3>
 
               <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-                Use digital tools to experiment in ways that aren&apos;t always
-                possible with traditional materials. Change it. Move it. Layer
-                it. Try something new.
+                Use digital tools to experiment in ways that aren&apos;t
+                always possible with traditional materials. Change it.
+                Move it. Layer it. Try something new.
               </p>
             </div>
           </div>
@@ -154,13 +222,13 @@ export default function CoursesPage() {
           </h2>
 
           <p className="mt-8 max-w-3xl text-lg leading-8 text-gray-600">
-            Some of our favorite experiments begin with something you can hold
-            in your hands.
+            Some of our favorite experiments begin with something
+            you can hold in your hands.
           </p>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            Students may draw or paint traditionally, then bring their artwork
-            into the digital environment.
+            Students may draw or paint traditionally, then bring their
+            artwork into the digital environment.
           </p>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
@@ -172,8 +240,8 @@ export default function CoursesPage() {
           </p>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            A simple color study might become the starting point for something
-            completely different.
+            A simple color study might become the starting point for
+            something completely different.
           </p>
 
           <p className="mt-8 max-w-3xl text-lg font-semibold leading-8">
@@ -181,126 +249,93 @@ export default function CoursesPage() {
           </p>
 
           <p className="mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-            And sometimes the most interesting destination is the one you
-            didn&apos;t plan to reach.
+            And sometimes the most interesting destination is the
+            one you didn&apos;t plan to reach.
           </p>
         </section>
 
-        {/* What Makes Coddiwomple Different */}
-        <section className="mt-20">
-          <h2 className="text-3xl font-semibold md:text-4xl">
-            What Makes Coddiwomple Different?
+  
+
+        {/* Upcoming Course: Digital Color & Composition */}
+        <section className="mt-20 rounded-2xl bg-gray-100 p-8 md:p-12">
+          <p className="text-sm font-medium uppercase tracking-widest text-gray-500">
+            Upcoming Course
+          </p>
+
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">
+            Digital Color &amp; Composition
           </h2>
 
-          <p className="mt-8 max-w-3xl text-lg leading-8 text-gray-600">
-            Coddiwomple Art isn&apos;t about choosing between traditional art
-            and technology.
+          <p className="mt-5 text-lg font-medium">
+            Coming in 2027 · Details to be announced
           </p>
 
-          <p className="mt-6 text-xl font-semibold">We use both.</p>
+          <h3 className="mt-8 text-2xl font-semibold">
+            Explore color. Combine elements. Create with intention.
+          </h3>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            Students learn foundational art skills they can practice
-            anywhere—with a pencil, a paintbrush, or a piece of paper.
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Discover how artists use color, composition, and visual
+            relationships to bring their ideas together.
           </p>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            Then they discover how technology can expand the creative process.
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Students will work with multiple visual references, combining
+            images, illustrations, and original artwork to create cohesive
+            compositions. They&apos;ll experiment with arrangement, scale,
+            contrast, and color to discover how individual elements
+            interact within a larger piece.
           </p>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
-            They learn to make decisions, solve visual problems, experiment with
-            possibilities, and develop their own ideas.
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Through hands-on projects, students will explore how the
+            same principles can be used in digital illustrations,
+            posters, and page layouts, including creative work
+            for their school community.
           </p>
 
-          <p className="mt-8 max-w-3xl text-xl font-semibold leading-8">
-            Art is the foundation.
-            <br />
-            Technology is another way to explore.
+          <h3 className="mt-10 text-xl font-semibold">
+            Students may explore:
+          </h3>
+
+          <ul className="mt-4 space-y-3 text-lg leading-8 text-gray-600">
+            <li>Color theory and color relationships</li>
+            <li>Creating and using color palettes</li>
+            <li>Combining multiple visual references</li>
+            <li>Composition, balance, and visual hierarchy</li>
+            <li>Scale, placement, and negative space</li>
+            <li>Working with images and illustrations</li>
+            <li>Creative page layouts and graphic design</li>
+          </ul>
+
+          <p className="mt-10 text-lg font-medium leading-8">
+            Learn to see how everything works together.
+          </p>
+
+          <p className="mt-4 text-lg leading-8 text-gray-600">
+            From a single illustration to a complete page design,
+            students will learn to make thoughtful creative decisions
+            that help their artwork communicate an idea.
           </p>
         </section>
 
-        {/* Digital Drawing Enrollment CTA */}
+        {/* Enrollment CTA */}
         <section className="mt-16 border-t border-gray-200 pt-12 pb-4">
           <h2 className="text-2xl font-semibold md:text-3xl">
             Ready to Make Something?
           </h2>
 
           <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600">
-            Bring your ideas to life, one creative decision at a time.
+            Bring your drawings to life through movement, storytelling,
+            and creative exploration.
           </p>
 
-          <AnimatedLink href="/enroll" dotRadius={5} duration="14s">
-            Enroll in Digital Drawing →
-          </AnimatedLink>
-        </section>
-
-        {/* Animation */}
-        <section className="mt-20 rounded-2xl bg-gray-100 p-8 md:p-12">
-          <p className="text-sm font-medium uppercase tracking-widest text-gray-500">
-            Featured Course
-          </p>
-
-          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Animation</h2>
-
-          <p className="mt-3 text-lg font-medium">
-            Coming Soon — Begins Wednesday, November 11
-          </p>
-
-          <h3 className="mt-8 text-2xl font-semibold">
-            Make it move. Tell a story. See what happens next.
-          </h3>
-
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Bring your drawings to life through animation. Students explore
-            movement, timing, sequencing, and visual storytelling while learning
-            how digital tools can transform a still image into something that
-            moves.
-          </p>
-
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Through hands-on projects, students experiment with frames, layers,
-            movement, and transformation while developing their own creative
-            ideas.
-          </p>
-
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Students may explore:
-          </p>
-
-          <ul className="mt-4 space-y-3 text-lg leading-8 text-gray-600">
-            <li>Drawing for animation</li>
-            <li>Layers and independent elements</li>
-            <li>Frames and sequencing</li>
-            <li>Movement and timing</li>
-            <li>Transformation and repetition</li>
-            <li>Visual storytelling</li>
-            <li>Digital illustration and animation tools</li>
-          </ul>
-
-          <p className="mt-10 text-lg font-medium leading-8">
-            No previous Coddiwomple Art course is required.
-          </p>
-
-          <p className="mt-4 text-lg font-semibold leading-8">
-            But if you&apos;ve taken Digital Drawing, you&apos;ll already have a
-            creative foundation to build on.
-          </p>
-        </section>
-
-        {/* Animation Enrollment CTA */}
-        <section className="mt-16 border-t border-gray-200 pt-12 pb-4">
-          <h2 className="text-2xl font-semibold md:text-3xl">
-            Ready to Make It Move?
-          </h2>
-
-          <p className="mt-4 max-w-2xl text-lg leading-8 text-gray-600">
-            Turn your drawings into movement, stories, and unexpected
-            possibilities.
-          </p>
-
-          <AnimatedLink href="/enroll" dotRadius={5} duration="14s">
-            Enroll in Animation →
+          <AnimatedLink
+            href="/enroll"
+            dotRadius={5}
+            duration="14s"
+          >
+            Enroll in Digital Animation →
           </AnimatedLink>
         </section>
       </div>

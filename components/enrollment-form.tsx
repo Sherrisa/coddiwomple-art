@@ -126,17 +126,23 @@ export default function EnrollmentForm() {
           <input
             type="radio"
             name="course"
-            value="Digital Drawing — 4:30–5:15 PM"
+            value="Digital Animation"
             required
             className="mt-1"
           />
 
           <span>
-            <span className="block font-medium">Digital Drawing</span>
-            <span className="block text-gray-600">
-              Wednesdays, 4:30–5:15 PM · October 7–November 4
+            <span className="block font-medium">
+              Digital : Bring Your Art to Life!
             </span>
-            <span className="block text-gray-600">Grades 1–6 · $75 + sales tax</span>
+
+            <span className="block text-gray-600">
+              Tuesdays, November 17–December 15
+            </span>
+
+            <span className="block text-gray-600">
+              Grades 1–6 · $75 + sales tax
+            </span>
           </span>
         </label>
       </fieldset>
