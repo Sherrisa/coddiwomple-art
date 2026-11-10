@@ -32,18 +32,20 @@ export default function EnrollmentForm() {
       console.error("Enrollment submission failed.", result);
     }
   }
+
   if (submitted) {
     return (
       <div className="mt-12 max-w-xl">
-        <h2 className="text-2xl font-medium">🎉 Yay! You did it.</h2>
+        <h2 className="text-2xl font-medium">🎉 You&apos;re on the list!</h2>
 
-        <p className="mt-4">Your enrollment information has been received.</p>
+        <p className="mt-4">Your waitlist request has been received.</p>
 
         <p className="mt-4">
-          I&apos;ll send you a confirmation and an invoice soon.
+          I&apos;ll contact you if a spot becomes available or a second section
+          opens.
         </p>
 
-        <p className="mt-8 font-medium">Grab your pencil. Let&apos;s go.</p>
+        <p className="mt-8 font-medium">Keep creating!</p>
       </div>
     );
   }
@@ -133,15 +135,23 @@ export default function EnrollmentForm() {
 
           <span>
             <span className="block font-medium">
-              Digital : Bring Your Art to Life!
+              Digital Animation: Bring Your Art to Life!
             </span>
 
             <span className="block text-gray-600">
-              Tuesdays, November 17–December 15
+              Tuesdays, 3:15–4:00 PM · November 17–December 15
             </span>
 
             <span className="block text-gray-600">
               Grades 1–6 · $75 + sales tax
+            </span>
+
+            <span className="block text-gray-600">
+              Prerequisite: Digital Drawing
+            </span>
+
+            <span className="mt-2 block font-medium text-gray-700">
+              Class Full · Waitlist Only
             </span>
           </span>
         </label>
@@ -167,7 +177,7 @@ export default function EnrollmentForm() {
         disabled={isSubmitting}
         className="rounded-md bg-black px-6 py-3 text-sm font-medium text-white hover:bg-gray-800"
       >
-        {isSubmitting ? "Adventure loading..." : "Submit Enrollment"}
+        {isSubmitting ? "Adventure loading..." : "Join the waitlist"}
       </button>
     </form>
   );

@@ -175,7 +175,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Final CTA */}
+      {/* Final CTA
       <section className="mx-auto max-w-4xl px-6 py-24">
         <h2 className="text-3xl font-bold md:text-5xl">
           Your next creative adventure starts here.
@@ -194,6 +194,7 @@ export default function Home() {
           Enroll Now →
         </AnimatedLink>
       </section>
+      */}
     </main>
   );
 }
